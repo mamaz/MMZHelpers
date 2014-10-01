@@ -19,6 +19,8 @@
 		AD50696F19DBC4BC00E831EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD50695719DBC4BC00E831EB /* UIKit.framework */; };
 		AD50697719DBC4BC00E831EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD50697519DBC4BC00E831EB /* InfoPlist.strings */; };
 		AD50697919DBC4BC00E831EB /* MMZHelpersExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50697819DBC4BC00E831EB /* MMZHelpersExampleTests.m */; };
+		AD50698519DBC4E700E831EB /* UIView+ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50698419DBC4E700E831EB /* UIView+ActivityIndicator.m */; };
+		AD50698819DBC54800E831EB /* MMZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50698719DBC54800E831EB /* MMZViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		AD50697419DBC4BC00E831EB /* MMZHelpersExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMZHelpersExampleTests-Info.plist"; sourceTree = "<group>"; };
 		AD50697619DBC4BC00E831EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD50697819DBC4BC00E831EB /* MMZHelpersExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMZHelpersExampleTests.m; sourceTree = "<group>"; };
+		AD50698319DBC4E700E831EB /* UIView+ActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ActivityIndicator.h"; sourceTree = "<group>"; };
+		AD50698419DBC4E700E831EB /* UIView+ActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ActivityIndicator.m"; sourceTree = "<group>"; };
+		AD50698619DBC54800E831EB /* MMZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMZViewController.h; sourceTree = "<group>"; };
+		AD50698719DBC54800E831EB /* MMZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMZViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +113,11 @@
 		AD50695919DBC4BC00E831EB /* MMZHelpersExample */ = {
 			isa = PBXGroup;
 			children = (
+				AD50698219DBC4E700E831EB /* UIView+Helpers */,
 				AD50696219DBC4BC00E831EB /* MMZAppDelegate.h */,
 				AD50696319DBC4BC00E831EB /* MMZAppDelegate.m */,
+				AD50698619DBC54800E831EB /* MMZViewController.h */,
+				AD50698719DBC54800E831EB /* MMZViewController.m */,
 				AD50696519DBC4BC00E831EB /* Images.xcassets */,
 				AD50695A19DBC4BC00E831EB /* Supporting Files */,
 			);
@@ -142,6 +151,15 @@
 				AD50697519DBC4BC00E831EB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD50698219DBC4E700E831EB /* UIView+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AD50698319DBC4E700E831EB /* UIView+ActivityIndicator.h */,
+				AD50698419DBC4E700E831EB /* UIView+ActivityIndicator.m */,
+			);
+			path = "UIView+Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD50696019DBC4BC00E831EB /* main.m in Sources */,
+				AD50698819DBC54800E831EB /* MMZViewController.m in Sources */,
 				AD50696419DBC4BC00E831EB /* MMZAppDelegate.m in Sources */,
+				AD50698519DBC4E700E831EB /* UIView+ActivityIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

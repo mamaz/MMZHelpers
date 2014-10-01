@@ -7,13 +7,17 @@
 //
 
 #import "MMZAppDelegate.h"
+#import "MMZViewController.h"
 
 @implementation MMZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    MMZViewController *mainViewController = [MMZViewController new];
+    self.window.rootViewController = mainViewController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
