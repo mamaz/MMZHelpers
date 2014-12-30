@@ -29,12 +29,12 @@
     
     // default is stop
     [activityIndicatorView stopAnimating];
-    [self setActivtyIndicatorView:activityIndicatorView];
+    [self setActivityIndicatorView:activityIndicatorView];
     
     return activityIndicatorView;
 }
 
-- (void)setActivtyIndicatorView:(UIActivityIndicatorView *)activtyIndicatorView
+- (void)setActivityIndicatorView:(UIActivityIndicatorView *)activtyIndicatorView
 {
     objc_setAssociatedObject(self, @selector(activityIndicatorView),
                              activtyIndicatorView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
