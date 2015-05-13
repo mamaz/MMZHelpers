@@ -10,8 +10,7 @@
 
 @interface NSString (Helpers)
 
-- (CGSize)sizeWordWrapWithString:(NSString*)string
-                            font:(UIFont*)font
-               constrainedToSize:(CGSize)constrainedSize;
+- (CGSize)sizeWordWrapWithFont:(UIFont*)font
+             constrainedToSize:(CGSize)constrainedSize;
 
 @end

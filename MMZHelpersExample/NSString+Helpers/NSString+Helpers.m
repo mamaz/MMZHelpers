@@ -16,20 +16,19 @@
 
 @implementation NSString (Helpers)
 
-- (CGSize)sizeWordWrapWithString:(NSString*)string
-                            font:(UIFont*)font
-               constrainedToSize:(CGSize)constrainedSize
+- (CGSize)sizeWordWrapWithFont:(UIFont*)font
+             constrainedToSize:(CGSize)constrainedSize
 {
     if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
         
-        CGSize size = [string sizeWithFont:font
+        CGSize size = [self sizeWithFont:font
                          constrainedToSize:constrainedSize
                              lineBreakMode:NSLineBreakByWordWrapping];
         
         return size;
     } else {
         // for iOS7++
-        CGRect rect = [string boundingRectWithSize:constrainedSize
+        CGRect rect = [self boundingRectWithSize:constrainedSize
                                            options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading
                                         attributes:@{NSFontAttributeName: font}
                                            context:nil];
